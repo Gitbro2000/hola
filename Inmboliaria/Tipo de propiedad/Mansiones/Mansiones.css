@@ -1,0 +1,42 @@
+.header{
+    text-align: center;
+    color: #0a580a;
+    margin: 0px;
+    font-size: 100px;
+}
+.descb{
+    text-align: center;
+    font-size: 25px;
+    }
+body{
+    background-color: #9a662e; 
+	font-family: 'Minecraft', sans-serif;
+	background-size: cover;
+}
+/* TODO EL DIV DE PROPIEDADES */
+#propiedades {
+    background-color: #6e4418;
+    border-radius: 10px;
+}
+.propiedad {
+    display: flex;
+    flex-direction: column;
+}
+.imgs {
+    width: 40%; 
+    border-radius: 20px;
+    height: 340px;
+    padding: 5px;
+    position:relative;
+    position: relative; left: 370px;
+}
+.titulo_casa{
+    color: black; 
+    font-size: 24px; 
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    color: orange;
+}

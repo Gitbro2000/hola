@@ -1,0 +1,64 @@
+.header{
+    text-align: center;
+    color: #0a580a;
+    margin: 0px;
+    font-size: 100px;
+}
+body{
+    background-color: #9a662e; 
+	font-family: 'Minecraft', sans-serif;
+	background-size: cover;
+}
+.descb{
+    text-align: center;
+    font-size: 25px;
+}
+#propiedades {
+    background-color: #6e4418;
+    border-radius: 10px;
+}
+.propiedad {
+    display: flex;
+}
+.imgs {
+    width: 35%; 
+    border-radius: 20px;
+    height: 320px;
+    padding: 5px;
+}
+.texto {
+    width: 60%; 
+}
+.titulo_casa{
+    color: black; 
+    font-size: 24px; 
+    text-align: center;
+    color: orange;
+    
+}
+.texto p {
+    color: black; 
+    font-size: 21px;
+    justify-content: center;
+}
+#Esmeralda{
+    position: relative; bottom: 10px;
+    position: relative; right: 104px;
+    float: right;
+    margin-right:505px;
+    width: 40px;
+    height: 40px;
+}
+#Esmeraldamr{
+    position: relative; bottom: 10px;
+    position: relative; right: 104px;
+    float: right;
+    margin-right:470px;
+    width: 40px;
+    height: 40px;
+}
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    color: orange;
+}
