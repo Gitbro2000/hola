@@ -3,22 +3,53 @@
     color: #0a580a;
     margin: 0px;
     font-size: 100px;
+	z-index: 1;
+	text-align: center;
+    color: transparent; 
+    font-size: 100px;
+    background: url('/Paginaprincipal/Imgs/emerald\ block.jpg'); 
+    -webkit-background-clip: text; 
+    background-clip: text;
 }
-
 .descb{
     text-align: center;
     font-size: 25px;
-    }
-
+}
 body{
     background-color: #9a662e; 
-	font-family: 'Minecraft', sans-serif;
-	background-size: cover;
+    height: 100%;
+    margin: 0;
+    font-family: Minecraft,sans-serif;
+}
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Paginaprincipal/Imgs/oak wall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    pointer-events: none; 
+    z-index: 1;
 }
 /* TODO EL DIV DE PROPIEDADES */
 #propiedades {
+    content: "";
     background-color: #6e4418;
-    border-radius: 10px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    z-index: 2;
 }
 .propiedad {
     display: flex;

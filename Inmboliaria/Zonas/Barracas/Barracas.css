@@ -1,9 +1,16 @@
- /* NOMBRE DEL BARRIO */
+/* NOMBRE DEL BARRIO */
 .header{
     text-align: center;
     color: #0a580a;
     margin: 0px;
     font-size: 100px;
+	z-index: 1;
+	text-align: center;
+    color: transparent; /* Color transparente para usar la imagen de fondo */
+    font-size: 100px;
+    background: url('/Paginaprincipal/Imgs/emerald\ block.jpg'); /* Ruta de la imagen para el texto */
+    -webkit-background-clip: text; /* Usar el fondo para el texto en WebKit */
+    background-clip: text; /* Usar el fondo para el texto */
 }
 /* DESCRIPCION DEL BARRIO */
 .descb{
@@ -13,13 +20,39 @@
 
 body{
     background-color: #9a662e; 
-	font-family: 'Minecraft', sans-serif;
-	background-size: cover;
+    height: 100%;
+    margin: 0;
+    font-family: Minecraft,sans-serif;
+}
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Paginaprincipal/Imgs/oak wall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2; /* Ajusta la opacidad según sea necesario */
+    pointer-events: none; /* Esto hace que el pseudo-elemento no interfiera con los clics */
+    z-index: 1;
 }
 /* TODO EL DIV DE PROPIEDADES */
-#propiedades {
+#propiedades{
+    content: "";
     background-color: #6e4418;
-    border-radius: 10px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 2;
 }
 .propiedad {
     display: flex;
@@ -40,13 +73,12 @@ body{
     color: orange;
 }
 .texto p {
-    color: black; 
     font-size: 21px;
     justify-content: center;
 }
 #Esmeralda{
     position: relative; bottom: 10px;
-    position: relative; right: 605px;
+    position: relative; right: 615px;
     float: right;
     width: 40px;
     height: 40px;

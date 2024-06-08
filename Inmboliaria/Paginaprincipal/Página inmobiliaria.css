@@ -1,0 +1,132 @@
+html,body{
+	height: 100%;
+	margin: 0;
+	font-family: Minecraft,sans-serif;
+}
+.header{
+    text-align: center;
+    color: #0a580a;
+    margin: 0px;
+    font-size: 100px;
+	z-index: 1;
+	text-align: center;
+    color: transparent; /* Color transparente para usar la imagen de fondo */
+    font-size: 100px;
+    margin: 0;
+    background: url('/Paginaprincipal/Imgs/emerald\ block.jpg'); /* Ruta de la imagen para el texto */
+    -webkit-background-clip: text; /* Usar el fondo para el texto en WebKit */
+    background-clip: text; /* Usar el fondo para el texto */
+	color: transparent; /* Color transparente para usar la imagen de fondo */
+    font-size: 100px;
+    margin: 0;
+}
+body{
+    background-color: #9a662e; 
+	position: relative;
+	overflow: hidden;
+}
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Paginaprincipal/Imgs/oak wall.jpg'); /* Ruta de la imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1; /* Ajusta la opacidad según sea necesario */
+    pointer-events: none; /* Esto hace que el pseudo-elemento no interfiera con los clics */
+    z-index: 2;
+}
+#lema{
+    margin: 0px;
+    font-size: 30px;
+}
+p{
+    color: aliceblue;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+.img{
+    margin: 0px;
+    border: 3px solid;
+}
+ /*NAV VAR*/
+#filtros{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 30px;
+    margin: auto; 
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav{
+	max-width: 2000px;
+	margin: auto;
+	background-color:  #6e4418;
+	font-size: 20px;
+	margin-top: 20px;
+    background-image: url(/Paginaprincipal/Imgs/dark\ oak\ wall.jpg);
+    
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	
+    z-index: 3;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+	
+}
+.menu-horizontal > li:hover{
+	background-color: red;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 204px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 900px;
+	background: white;
+}
+#propdes{
+	font-size: 50px;
+	text-align: center;
+	color: red;
+	padding: 135px;
+}
