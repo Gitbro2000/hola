@@ -7,7 +7,7 @@
 	text-align: center;
     color: transparent; 
     font-size: 100px;
-    background: url('/Paginaprincipal/Imgs/emerald\ block.jpg'); 
+    background: url('../../Paginaprincipal/Imgs/emerald\ block.jpg'); 
     -webkit-background-clip: text; 
     background-clip: text;
 }
@@ -33,7 +33,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('/Paginaprincipal/Imgs/oak wall.jpg');
+        background-image: url('../../Paginaprincipal/Imgs/oak\ wall.jpg');
         background-size: cover;
         background-position: center;
         opacity: 0.2;
