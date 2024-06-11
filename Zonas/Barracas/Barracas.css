@@ -1,0 +1,108 @@
+/* NOMBRE DEL BARRIO */
+.header{
+    text-align: center;
+    color: #0a580a;
+    margin: 0px;
+    font-size: 100px;
+	z-index: 1;
+	text-align: center;
+    color: transparent; /* Color transparente para usar la imagen de fondo */
+    font-size: 100px;
+    background: url('/Paginaprincipal/Imgs/emerald\ block.jpg'); /* Ruta de la imagen para el texto */
+    -webkit-background-clip: text; /* Usar el fondo para el texto en WebKit */
+    background-clip: text; /* Usar el fondo para el texto */
+}
+/* Estilo base del botón */
+.comprar-btn {
+    background-color: orange; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    font-family: 'Minecraft', sans-serif;
+    opacity: 0.8;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.comprar-btn:hover {
+    background-color: white; /* Cambia el color de fondo */
+    color: orange; /* Cambia el color del texto */
+}
+
+
+/* DESCRIPCION DEL BARRIO */
+.descb{
+    text-align: center;
+    font-size: 25px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Minecraft', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #9a662e;
+    position: relative;
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Paginaprincipal/Imgs/oak wall.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+/* TODO EL DIV DE PROPIEDADES */
+
+#propiedades{
+    background-color: rgba(47, 26, 3, 0.7); /* Color de fondo opacado */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.propiedad {
+    display: flex;
+}
+.imgs {
+    width: 40%; 
+    border-radius: 20px;
+    height: 340px;
+    padding: 5px;
+}
+.texto {
+    width: 60%; 
+}
+.titulo_casa{
+    color: black; 
+    font-size: 24px; 
+    text-align: center;
+    color: orange;
+}
+.texto p {
+    font-size: 21px;
+    justify-content: center;
+}
+#Esmeralda{
+    position: relative; bottom: 10px;
+    position: relative; right: 590px;
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    color: orange;
+}
+.precio{
+    background-color: #0a580a;
+}
