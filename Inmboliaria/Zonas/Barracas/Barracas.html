@@ -8,36 +8,37 @@
 	<link rel="icon" href="/Img/bloque de pasto.webp" type="image/x-icon">
     <link rel="stylesheet" href="Barracas.css">
     <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+    <script src="/Zonas/Barracas/comprar.js"></script>
 </head>
 
 <body>
-    <div class="content">
-        <header>
-            <p>
-                <a href="/Paginaprincipal/Página inmobiliaria.html" class="link">Volver a la pagina principal </a>
-            </p>
-            <p>
-                <a href="/Tipo de propiedad/Casas/Casas.html" class="link">Volver a casas </a>
-            </p>
-            <p>
-                <a href="/Tipo de propiedad/Mansiones/Mansiones.html" class="link">Volver a mansiones </a>
-            </p>
-            <h1 class="header">
-                BARRACAS
-            </h1>
-        </header>
-        
-        <p class="descb">
-            Debe su nombre a las antiguas barracas que comenzaron a construirse a fines 
-            del siglo XVIII.Dentro del barrio se encuentra el Puente Pueyrredón que 
-            cruza el Riachuelo, la Iglesia de Santa Lucia la cual simboliza el 
-            corazón católico del barrio sureño y la Iglesia de Santa Felicitas, 
-            fruto de una historia de amor, tragedia y desencuentro.
+    <header>
+        <p>
+            <a href="/Paginaprincipal/Página inmobiliaria.html" class="link">Volver a la pagina principal </a>
         </p>
+        <p>
+            <a href="/Tipo de propiedad/Casas/Casas.html" class="link">Volver a casas </a>
+        </p>
+        <p>
+            <a href="/Tipo de propiedad/Mansiones/Mansiones.html" class="link">Volver a mansiones </a>
+        </p>
+        <h1 class="header">
+            BARRACAS
+        </h1>
+    </header>
     
+    <p class="descb">
+        Debe su nombre a las antiguas barracas que comenzaron a construirse a fines 
+        del siglo XVIII.Dentro del barrio se encuentra el Puente Pueyrredón que 
+        cruza el Riachuelo, la Iglesia de Santa Lucia la cual simboliza el 
+        corazón católico del barrio sureño y la Iglesia de Santa Felicitas, 
+        fruto de una historia de amor, tragedia y desencuentro.
+    </p>
 
-
-    <div id="propiedades">
+<section>
+    
+        <div id="propiedades">
+    <div class="propiedades-contenido">
         <div class="propiedad">
             <img src="/Zonas/Barracas/Imgs/Barracas 2.jpg" class="imgs">
             <div class="texto">
@@ -50,11 +51,19 @@
                 <h2 id="Precio">
                     Precio
                 </h2>
-                <p>
-                    20.000 <img src="/Img/Esmeralda.webp" id="Esmeralda">
+                <p class="precios">
+                    20.000 <img src="/Img/Esmeralda.webp" id="Esmeralda">  
                 </p>
+                <button onclick="comprar()"class="comprar-btn">Comprar</button>
             </div>
         </div>
+<script lang="javascript">
+
+</script>
+        <section>
+
+        </section>
+        
         <div class="propiedad">
             <img src="/Zonas/Barracas/Imgs/barracas4.png" class="imgs">
             <div class="texto">
@@ -70,11 +79,11 @@
                         <h2 id="Precio">
                             Precio
                         </h2>
-                        <p>
+                        <p class="precios">
                             45.000 <img src="/Img/Esmeralda.webp" id="Esmeralda">
                         </p>
+                        <button onclick="comprar()"class="comprar-btn">Comprar</button>
                     </div>
-
             </div>
         </div>
         <div class="propiedad">
@@ -94,10 +103,12 @@
                 <p>
                     100.000 <img src="/Img/Esmeralda.webp" id="Esmeralda">
                 </p>
+                <button onclick="comprar()"class="comprar-btn">Comprar</button>
             </div>
         </div>
     </div>
-    </div>
-    
+</div>  
+</section>
+
 </body>
 </html>
